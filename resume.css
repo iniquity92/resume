@@ -1,0 +1,89 @@
+body{
+  font-family:sans-serif;
+}
+
+div.title,div#bio,div#woi{
+  text-align:center;
+}
+div#bio > h1#name,div#bio > p#contact {
+  margin:0px;
+}
+div#bio > p#contact{
+  font-size:12px;
+}
+div#woi,div.cover-letter div#it-bio,div.cover-letter div#salute,div.cover-letter div#cl-body{
+  font-size:15px;
+}
+div#objective>hr,div#workex>hr,div#education>hr,div#interests>hr{
+  width:251px;
+  margin:auto;
+  margin-top:-15px;
+
+}
+
+div#workex table#wlist{
+  width:100%;
+  margin:auto;
+  margin-top:-10px;
+  border-collapse:collapse;
+}
+div#workex table#wlist tr{
+  border: 1px solid rgba(230,230,230,0.3);
+}
+div#workex table#wlist tr td:nth-of-type(2n){
+  background-color: skyblue;
+    padding:8px;
+}
+div#workex table#wlist tr td:nth-of-type(2n+1){
+  background-color:deepskyblue;
+}
+div#workex table#wlist tr td:first-child{
+  background-color:steelblue;
+}
+
+div#education table#etable{
+  width:100%;
+  margin:auto;
+  border-collapse:collapse;
+}
+
+
+div#education table#etable tr:nth-of-type(2n) {
+  background-color: deepskyblue;
+}
+div#education table#etable tr td,div#education table#etable tr th {
+  margin: 0px;
+  padding: 8px;
+}
+div#education table#etable tr:nth-of-type(2n+1) {
+  background-color: steelblue;
+}
+div#interests ul#ilist{
+  text-align:justify;
+  width:65%;
+  margin:auto;
+}
+div#woi p{
+  margin-top:0px;
+ 
+}
+div#woi>div#workex ul#wlist,div#woi>div#education table#etable, div#woi>div#interests ul#ilist{
+  margin-top:-10px;
+}
+div#interests ul#ilist>li{
+  list-style-type:square;
+}
+body hr{
+  border-top:0px;
+  border-bottom:0.5px solid black;
+  border-left:0px;
+  border-right:0px;
+}
+@page{
+  size:8.3in 11.7in;
+  margin:10%;
+}
+
+div.title,div.resume,div.cover-letter{
+	page-break-after:always;
+}
